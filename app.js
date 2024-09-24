@@ -122,3 +122,55 @@ function multiply(a,b = 1){
     return a * b
 }
 console.log(multiply(5))
+
+// The spread operator is  a new addition to the set of operators in js ES6, it takes in an iterable (eg an array) and expands it into individual elements. The spread operator is commonly used to make shallow copies of js objects. using this operators makes the code concise and enhances its readability
+//  with functions, arrays and objects
+
+function giveme4 (a,b,c,d){
+    console.log("a", a);
+    console.log("b", b);
+    console.log("c", c);
+    console.log("d", d);
+}
+
+const colors =  ["red", "blue", "green", "teal"];
+giveme4(...colors);
+
+// arays
+const strNums = ["one", "two", "three"];
+const moreStrNmaes = ["four", "five", "six"];
+const concat = [ ...strNums, ...moreStrNmaes];
+
+console.log(concat);
+
+let people = ['frank', 'john', 'joel'];
+const peps = ['kumar', ...people, 'johana'];
+console.log(peps);
+
+// objects
+const obj1 = {x:1, y:2};
+const obj2 = {z:3};
+const obj3 = {...obj1, ...obj2};
+console.log(obj3);
+
+let person = {
+    name : "frank",
+    age : 27,
+    gender : "male",
+};
+const clone = {...person};
+console.log(clone);
+console.log(person);
+
+// challenge
+let arr = [1, 2, 3];
+let arr2 = [4,5];
+const arr3 = [...arr, ...arr2];
+console.log(arr3);
+
+const owner = {
+    name : 'john',
+    age : 22
+};
+const man = {...user};
+console.log(owner);
