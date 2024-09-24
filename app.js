@@ -39,5 +39,37 @@ console.log(`this is some
 
         console.log(`my name is  ${nameOne} ${nameTwo}`);
 
-        // Error functions
+        // Arrow functions
         
+// Arrow functions, also known as fat arrow functions, are a concise and shorter way to define functions in js. they were introduced in ECMASCRIPT 6 (ES6) and provide a more compact syntax compared to traditional function expressions
+// function greet(username){
+//     return `Hello ${username}`;
+// }
+// console.log(greet('frank'));
+
+// arrow function
+// greet = (username) => {
+//     return `Hello ${username}`;
+// }
+// console.log(greet('frank'))
+
+// or
+const greet = (username) => `Hello ${username}`;
+console.log(greet('frank'));
+
+// function double(number){
+//     return number * 2;
+// }
+// console.assert;
+// log(double(5));
+
+// arrow
+// const double = (Number) => Number * 2;
+// console.log(double(10));
+
+// or
+const double = n => n * 2;
+console.log(double(10))
+
+
+
