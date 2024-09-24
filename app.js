@@ -71,5 +71,29 @@ console.log(greet('frank'));
 const double = n => n * 2;
 console.log(double(10))
 
+// Enhanced object literals
+// Enhanced object literaals, introduced in ECMASCRIPT 6 (ES6), are a set of enhancements to the syntax for defining objects in js. These enhancements make it more convenient and concise to define object properties and methods
+//  function user(name,age,work){
+//     return{
+//         name: name,
+//         age: age,
+//         work: work,
 
+//     };
+//  }
 
+// literals
+function user(name, age, work){
+    return {
+        name,
+        age,
+        work,
+        intro: () => {
+            console.log(`my name is ${name} and i am ${age} years old and i am ${work}`);
+        },
+    };
+}
+ const frank = user('frank', 27, 'programmer');
+ const johnstone = user('stone', 20, ' developer')
+ console.log(frank.intro());
+ console.log(johnstone.intro());
