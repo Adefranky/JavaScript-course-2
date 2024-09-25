@@ -174,3 +174,25 @@ const owner = {
 };
 const man = {...user};
 console.log(owner);
+
+// The rsey parameter syntax allows a function to accept an indefinite number of arguments .
+// as an array, providing a way to represent variadic functions in js
+function userm(...userData){
+    console.log(userData);
+}
+userm("frank", 19, "programming", "football");
+
+function myName(firstName, lastNmae, ...hobbies){
+    console.log("first Name:" , firstName);
+    console.log("last Name:", lastNmae);
+    console.log("Hobbies:", hobbies);
+}
+myName("frank", "Webdev", "programming", "football", "singing");
+
+// challenge
+function unknown(firstName, lastNmae, ...career){
+    console.log("first Name:", firstName);
+    console.log("last Name:", lastNmae);
+    console.log("career:", career);
+}
+unknown("frank", "webdev", "programming", "agriculture", "Developer");
