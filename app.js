@@ -375,3 +375,45 @@ console.log(`email Notification: ${emailNotification}`);
 console.log(`sms Notification: ${smsNotification}`);
 console.log(`push Notification: ${pushNotification}`);
 console.log(`language: ${language}`);
+
+
+// Ternary operator in js
+// The ternary operator in js is a concise way of writing conditional expressions. 
+// It is the only js operator that takes 3 operands: a condition followed by a question mark (?),
+// an expression to execute if the condition is true, followed by a colon(:),
+// and an expression to execute if the condition is false.
+
+// Condion ? eprIfFalse;
+// let password =2;
+
+// function passwordChecker(ps){
+//     if (ps ===8){
+//         return `Strong Password`;
+
+//     }else{
+//         return "password should be 8 characters."
+//     }
+
+// }
+// // console.log(passwordChecker(2));
+
+// const res = passwordChecker(2);
+// console.log(res);
+
+// ternary
+let password = 5
+function passwordChecker(ps){
+    return ps ===8? `strong password` : "password should be 8 characters.";
+}
+const res = passwordChecker(2);
+console.log(res);
+
+const miaka = 25;
+const isAdult = miaka >= 18 ? "Adult" : "Not an Adult";
+console.log(isAdult);
+
+// Challenge
+const money = 25;
+const hasMoney = money >= 25 ? "Buy products" : "Bring Money";
+console.log(hasMoney);
+
