@@ -417,3 +417,27 @@ const money = 25;
 const hasMoney = money >= 25 ? "Buy products" : "Bring Money";
 console.log(hasMoney);
 
+// The "for ...in " loop in js is used to iterate over the enumerable properties of an object.
+// It is a way to loop through the keys (property names) of an object.
+
+// for (let key in object) {...}
+let person2 = {
+    name: "Frank",
+    age: 27,
+    gender: "Male",
+};
+for (let keys in person){
+    console.log(keys);
+}
+
+let list = ["one", "two", "three", "four"];
+
+for (let index in list) {
+    console.log(`${index}: ${list[index]}`);
+}
+
+// challenge
+const object = {a:1, b:2,c:3}; 
+for (let index in object){
+    console.log(`${index}: ${object[index]}`);
+}
