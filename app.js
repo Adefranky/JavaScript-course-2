@@ -196,3 +196,182 @@ function unknown(firstName, lastNmae, ...career){
     console.log("career:", career);
 }
 unknown("frank", "webdev", "programming", "agriculture", "Developer");
+
+// Destructuring allows us to "unpack" values from data-structures (Arrays, objects) into separate distinct variables.
+// const foo = ["one", "two", "three"];
+// const one = foo[0];
+// console.log(one);
+
+const fool = ['one', 'two', 'three'];
+const [one, two, three] = fool;
+console.log(one);
+console.log(two);
+console.log(three);
+
+// destructuring
+const fooo = ['one', 'two'];
+const [uncle, yellow, green, blue] = fooo;
+console.log(green);
+console.log(yellow);
+
+// providing default values
+// let a, b;
+// [a=5, b=8] = ["one", "two"];
+// console.log(b);    ans two
+
+// let a, b;
+// [a=5, b=8] = ["one"];
+// console.log(b);
+// // ans =8
+
+function f(){
+    return [1,2];
+}
+let a, b;
+[a,b] = f();
+console.log(a);
+console.log(b);
+
+function f1(){
+    return [1,2,3]
+}
+const [c, , d] = f1();
+console.log(c);
+console.log(d);
+
+// assigning the rest of an array to a variable
+const [e, ...g] = ["one", "two", "three"];
+console.log(g);
+
+// challenge
+const colours = ["red", "green", "blue", "yellow", "orange"];
+// let color1, color2, color3;
+const [color1,color2, color3] = colours;
+console.log(color1);
+console.log(color2);
+console.log(color3);
+
+// Object destructuring
+const student = {name: "Frank",  position :"First", rollNo: 27};
+const {name,position,rollNo} = student;
+console.log(name);
+console.log(position);
+console.log(rollNo);
+
+// challenge
+const me = {
+    Fname: "Frank Elias",
+ age: 27,
+ gender: "male",
+ country : "USA",
+};
+const {Fname, age, gender, country} = me;
+console.log(Fname,age,gender,country);
+
+
+// Renaming our variables in js
+const numb = {x:100, y:200};
+const {x:new1, y:new2} =numb;
+console.log(new1);
+console.log(new2);
+
+// object destructuring and rest opertaor
+let {i, j, ...rest } = {i:100, j:200, c:300, d:400, e:500};
+console.log(i);
+console.log(b);
+console.log(rest);
+
+// function destructuring in js
+const tourist = {
+    name: "john doe",
+    age : 20,
+    country: "USA",
+}
+function printPersonInfo({name, age, country}){
+    console.log(`Name: ${name}`)
+    console.log(`Age: ${age}`)
+    console.log(`country :${country}`)
+}
+
+printPersonInfo(tourist);
+
+// Nested Destructuring in js
+// Destructuring inside destructuring
+const songs = [
+    {name: "Lucy You", singer: "Joyner", duration: 4.34},
+    {name: "Just Like You", singer: "NF", duration:2.33},
+    {name: "Humble Singer", singer: "Kendrick Lamar", duration:3.23},
+    {name: "Old Town Road", singer: "Lil Nas X", duration:1.34},
+    {name: "cold shoulder", singer: "Central Cee", duration:5.23},
+];
+const [, , , {singer}] = songs;
+console.log(singer);
+
+// Destructuring mixture
+const data = {
+    user1: {
+        id: 123,
+        name1: "John Doe",
+        age1: 30,
+        email: "johndoe@gmail.com",
+        address: {
+            city : "New York",
+            country1: "USA",
+        },
+        hobbies : ["Reading", "Painting", "cooking"],
+        scores: {
+            math: 95,
+            science: 88,
+            history: 75,
+        },
+
+    },
+    products:[
+        {id:1, name1:"Laptop", price:1000},
+        {id:2, name1: "phone", price:800},
+        {id:3, name1: "Tablet", price:500},
+    ],
+    settings: {
+        darkmode:true,
+        notifications:{
+            email:true,
+            sms:false,
+            push:true,
+        },
+        language:"English",
+    },
+};
+
+const {
+    user1: {
+        name1,age1, address:{city, country1},
+        hobbies,
+        scores: {math, science, history},
+        email,
+    },
+    products:[product1, product2, product3],
+    settings:{
+        darkmode,
+        notifications: {
+            email: emailNotification,
+            sms: smsNotification,
+            push: pushNotification,
+        },
+        language,
+    },
+} = data;
+console.log(`name1: ${name1}`);
+console.log(`age1: ${age1}`);
+console.log(`address: ${city} ${country1}`);
+console.log(`hobbies: ${hobbies.join(",")}`);
+console.log(`math score: ${math}`);
+console.log(`science score: ${science}`);
+console.log(`history score: ${history}`);
+console.log(`product1: ${product1.name1} - $${product2.price} `);
+console.log(`product1: ${product2.name1}- $${product2.price} `);
+console.log(`product1: ${product3.name1} - $${product2.price} `);
+console.log(`dark mode: ${darkmode}`);
+console.log(`email Notification: ${emailNotification}`);
+console.log(`sms Notification: ${smsNotification}`);
+console.log(`push Notification: ${pushNotification}`);
+console.log(`language: ${language}`);
