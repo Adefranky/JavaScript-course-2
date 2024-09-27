@@ -441,3 +441,24 @@ const object = {a:1, b:2,c:3};
 for (let index in object){
     console.log(`${index}: ${object[index]}`);
 }
+
+// The "for ...of" loop in js is a modern iteration statement introduced in ECMASCRIPT 6 (ES6) that provides a concise and easy way to loop over elements in ierable objects like arrays,
+// stringsmaps,sets, and more. it allows you to iterate directly ovaer the values of the elements, rather than dealing with their indices or keys, which makes the code more readable and less error prone.
+// for (varaiable of iterable){}
+let peoples = ["Frank", "allan", "andrew", "leonard"];
+
+for (let people of peoples){
+    console.log(people);
+}
+
+const text = "Hello";
+for (const char of text){
+    console.log(char);
+}
+// challenge
+const array1 = ["a", "b", "c"];
+for(const array of array1){
+    console.log(array);
+}
+
+// for Each helper
