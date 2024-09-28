@@ -509,3 +509,32 @@ let randomnum = [
 ];
 let multinum = randomnum.map((num) => num * 10);
 console.log(multinum);
+
+// The filter() method is a built in array method in js that allows you to create a new array containing elements that pass a certain condition. It provides a clean and concise way to filter out elements  from an array based on a specified criteria.
+
+const songs3 = [
+    {name : "Lucy you", duration: 4.34},
+    {name : "Just like You", duration: 3.23},
+    {name : "The search", duration: 3.45},
+    {name : "Old Town Road", duration: 4.23},
+    {name : "The box", duration: 5.23},
+
+];
+console.log(songs3.filter(songs3 => songs3.duration>4));
+
+
+const computers = [
+    {ram : 4, hdd : 100},
+    {ram : 8, hdd : 200},
+    {ram : 16, hdd : 300},
+    {ram : 32, hdd : 400},
+];
+
+console.log(computers.filter((com)=>com.ram > 16));
+
+// challenge
+const  ages =[ 
+32, 33,16,40
+];
+
+console.log(ages.filter((age) =>age > 18));
