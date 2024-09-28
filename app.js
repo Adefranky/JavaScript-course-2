@@ -548,4 +548,6 @@ const wordsz = [
     "present",
 
 ];
-console.log(wordsz.filter((word) => word.length > 6))
+console.log(wordsz.filter((word) => word.length > 6));
+
+// The find method is another built in array helper in js that allows you to find the first element in an array that matches  a specific condition. It returns the value of the first element that satisfies the given testing function, or defined if no element is found.
