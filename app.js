@@ -462,3 +462,50 @@ for(const array of array1){
 }
 
 // for Each helper
+// when we call the for each helper we pass in anonymous callback function
+// this function gets called one time for every element in the array
+// whatever is inside the function thatb logic happens
+const colors5 = ["teal", "blue", "red", "green"];
+colors5.forEach((color4)=> console.log(color4));
+
+const words = ["hello", "bird", "table", "football", "pipe", "code"];
+
+const capWords = words.forEach((word,index, arr)=> {
+    arr[index] = word[0].toUpperCase() + word.substring(1);
+});
+console.log(words);
+
+// let numbers = [1, 4, 7, 8, 9];
+// let sum = 0;
+// function adder(number){
+// sum += Number;
+// }
+// numbers.forEach(adder);
+
+// console.log(sum);
+
+// The map() method creates a new array populated with the results 
+// of calling a provided function on every element in the calling array
+
+let namba = [1,2,3,4,5];
+
+let times = namba.map((num) =>num * 2);
+console.log(times); 
+
+let workers = 
+[
+{firstName: "Macom", lastNmae : "Reynolds"},
+{firstName: "Kaylee", lastNmae: "Frye"},
+{firstName: "Jayne", lastNmae: "Cobb"},
+]
+
+const results = workers.map(persona =>{
+    return [persona.firstName, persona.lastNmae];
+});
+console.log(results);
+
+let randomnum = [
+    4, 6, 8, 2, 6
+];
+let multinum = randomnum.map((num) => num * 10);
+console.log(multinum);
