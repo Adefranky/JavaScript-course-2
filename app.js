@@ -538,3 +538,14 @@ const  ages =[
 ];
 
 console.log(ages.filter((age) =>age > 18));
+
+const wordsz = [
+    "spray",
+    "limit",
+    "elite",
+    "exuberant",
+    "destruction",
+    "present",
+
+];
+console.log(wordsz.filter((word) => word.length > 6))
