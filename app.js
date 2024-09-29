@@ -551,3 +551,29 @@ const wordsz = [
 console.log(wordsz.filter((word) => word.length > 6));
 
 // The find method is another built in array helper in js that allows you to find the first element in an array that matches  a specific condition. It returns the value of the first element that satisfies the given testing function, or defined if no element is found.
+const peoplearr = [
+    {name: "Frank", age : 27},
+    {name: "john", age : 18},
+    {name: "alaex", age : 20},
+    {name: "jimmy", age : 30},
+    {name: "alex", age : 30},
+
+];
+const result = peoplearr.find((person) =>person.name==="alex");
+console.log(result);
+
+const posts = [
+    {id:1, content : "funny posts"} ,
+    {id:2, content : "good posts"} ,
+    {id:3, content : "sad posts"} ,
+];
+
+const postsres = posts.find((post) =>post.content==="funny posts");
+console.log(postsres);
+
+// challenge
+const agesarray= [
+    3,10,18,20
+];
+const arrages = agesarray.find((age) => age > 18);
+console.log(arrages);
