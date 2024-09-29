@@ -577,3 +577,17 @@ const agesarray= [
 ];
 const arrages = agesarray.find((age) => age > 18);
 console.log(arrages);
+
+// The every() and same() are two built in array methods in js that allow you to checkthe elements of an array based on a given condition. Both methods take a callback function as an argument, which is applied to each element of an array.
+// The every() method tests whether all elements in an array pass the condition specified by the provided callback function. It returns true if the callback function returns true for every element, and fails if any element fails the condition.
+// The same() method tests whether at least one element in the array passes te condition specified by the provided callback function. It returns true if the callback function returns true for atleast one element, and false if no element passes the condition.
+
+const peoples3 = ["Frank", "Linus", "Tom"];
+const res1 = peoples3.every((people) => people.length===4);
+const res2 = peoples3.some((people) => people.length < 3)
+const res3 = peoples3.some((people) => people.length >3);
+console.log(res1);
+console.log(res2);
+console.log(res3);
+
+
