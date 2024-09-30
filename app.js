@@ -590,4 +590,48 @@ console.log(res1);
 console.log(res2);
 console.log(res3);
 
+// The reduce() method applies the reducer function to each element of an array, accumulating the results in to a single value. It is often used to perform calculations or  aggregations on array elements and simply the array into a single value.
 
+const numbers = [1,2,3,4,5];
+const sum = numbers.reduce((p, c) =>{
+    return p+c;
+}, 0);
+console.log(sum);
+
+// p = previous value and c = current value
+
+const pipos = [
+    {
+        name: "Frank Web",
+        age: "27",
+    },
+    {
+        name: "alex med",
+        age: 25,
+
+    },
+    {
+        name: "Brain griffin",
+        age: 40,
+    },
+
+];
+
+const oldestAge = pipos.reduce((p, c) =>(c.age > p? c.age : p), 0 )
+console.log(oldestAge);
+
+const wards = [
+    "apple",
+    "banana",
+    "orange",
+    "banana",
+    "apple",
+    "orange",
+    "apple",
+    "grape",
+];
+const wordFrequency = wards.reduce((frequencyMap, ward) =>{
+  frequencyMap[ward] = (frequencyMap[ward] ||0 + 1)  
+  return frequencyMap;
+}, {})
+console.log(wordFrequency);
