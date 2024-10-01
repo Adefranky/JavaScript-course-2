@@ -635,3 +635,48 @@ const wordFrequency = wards.reduce((frequencyMap, ward) =>{
   return frequencyMap;
 }, {})
 console.log(wordFrequency);
+
+function calculateProduct(arr) {
+    return arr.reduce((accumulator, currentValue) => accumulator * currentValue);
+
+}
+const numberArr = [1,2,3,4,5];
+
+const product = calculateProduct(numberArr);
+console.log(product); // 120
+
+// Map in js is a bilt in data structure introduced in (ES6) that allows you to store key-value pairs where both the keys and values can be of any data type. It is similar to an object , but with a few key differences.
+// Keys can be of any data type: Unlike objects, where keys are limited to strings and symbols, map allows you to use any data type as keys, including numbers, booleans, objects and even other map instances.
+
+// Maintains insertion order: Map preserves the order of key-value pairs as they are inserted, while object keys may not be guaranteed to be in a specific order.
+// Iteration: Map provides built-in methods for easy iteration over its elements.
+
+const map = new Map();
+const keyOne = "string";
+const keyTwo = {};
+const keyThree = function () {};
+
+map.set(keyOne, "value of key one");
+map.set(keyTwo, "value of key two");
+map.set(keyThree, "value of key three");
+
+console.log(map);
+console.log(map.keys());
+console.log(map.values());
+console.log(map.delete(keyTwo));
+console.log(map.size);
+
+// iterating to a map
+for (let [key, value] of map) {
+    console.log(`${key} -- $(value)`);
+}
+
+for (let key of map.keys()) {
+    console.log(key);
+}
+
+// Iterating over to the values
+
+for (let value of map.values()) {
+    console.log(value);
+}
