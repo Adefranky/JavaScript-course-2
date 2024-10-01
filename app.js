@@ -743,3 +743,6 @@ console.log(obje);
 for (let i in obje){
     console.log(i);
 }
+
+// DOM
+// When a web page is loaded, the browser creates a Document Object Model of the Page.
