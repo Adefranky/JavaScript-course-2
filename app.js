@@ -680,3 +680,34 @@ for (let key of map.keys()) {
 for (let value of map.values()) {
     console.log(value);
 }
+
+// Set is a built in data structure introduced in (ES6) that represents a collection of unique values. Unlike arrays, set allows you to store only unique values, which means duplicate values are automatically removed. Each value can occur only once within a set.
+//  Set objects are useful when you need to store a list of unique elements and quickly check for the exixtence of a specific value.
+
+// empty set
+const mySet = new Set();
+console.log(mySet);
+
+const initialValues = [1,2,2,2,2,2, 3];
+const maiSet = new Set(initialValues);
+console.log(maiSet);
+
+// setting it mannually
+const maiSett = new Set();
+maiSett.add("apple");
+maiSett.add("banana");
+maiSett.add("orange");
+console.log(maiSett.has("banana"));
+
+maiSett.clear();
+console.log(maiSett);
+
+const leters = new Set();
+leters.add("a");
+leters.add("b");
+leters.add("c");
+
+console.log(leters);
+for (let value of leters) {
+    console.log(value);
+}
