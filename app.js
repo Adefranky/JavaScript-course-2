@@ -767,8 +767,8 @@ const person3 = {
 }
 
 // person3 = john => Error
-person3.name = john;
-console.log(person3);
+// person3.name = john;
+// console.log(person3);
 
 // we can also declare several variables at once
 // const d =10,
@@ -869,3 +869,17 @@ console.log(person3);
 // null = 0;
 
 // undefined = NaN = > any number plus undefined = NaN
+
+
+// to write the first letter to uppercase, we use ChartAt 
+const myString = 'developer';
+
+let myNewString;
+
+myNewString = myString.charAt(0).toUpperCase(); + myString.substring(1);
+
+// myNewString = myString(0).toUpperCase(); + myString.substring(1);
+
+
+// myNewString = `${myString(0).toUpperCase()} ${myString.slice(1)}`;
+console.log(myNewString);
