@@ -788,3 +788,20 @@ console.log(person3);
 // undefined - A variable that has not yet been defined/assigned
 // Symbol - Built in object whose constructor returns a unique Symbol
 // BigInt - Numbers that are greater than the "Number" type can handle
+
+// Reference SVGUnitTypes(objects)
+// These are non primitive values and when assigned to a variable, the variable is given a refence to that value
+// Object literals, arrays and functions are all refence types 
+
+// Static Typing vs Dynamic Types 
+// JavaScript is a dynamically-typed language. This means, we do not explicitly define the types for our variables. Many other languages are statistically-typed such as C, C++ and Java .
+
+// Typescript is a superset of Javascript, which allows static typing. This can make your code more verbose and less prone to errors. Typescript maybe something you want to look into later one. 
+
+
+// // Data types storage
+// Primitive types: stored directly in the stack, where it is accessed from 
+// string|Number|Boolean|null|undefined|Symbol|BigInt
+
+// Reference types: stored in the heap and accessed by reference 
+// arrays|functions|Objects
