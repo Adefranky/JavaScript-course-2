@@ -746,3 +746,45 @@ for (let i in obje){
 
 // DOM
 // When a web page is loaded, the browser creates a Document Object Model of the Page.
+
+
+
+// Ways of declaring a variable
+// let, var and const
+
+// reassigning variables
+let age3 = 27;
+console.log(age3);
+age3 = 30;
+console.log(age3);
+
+// const can not be reassigned as above
+// const cannot also be defined/ initialized without assigning
+// eg const age,
+// but you can change o property inside an object
+const person3 = {
+    name: "Brad",
+}
+
+// person3 = john => Error
+person3.name = john;
+console.log(person3);
+
+// we can also declare several variables at once
+// const d =10,
+// e = 20,
+// f= 30
+// console.log(e);
+// if you dont define your variable, you will get undefined
+
+// Data types 
+// Primitive Data Types and Reference type/object
+
+// 1. Primitive data types
+// String - sequence of characters. Must be in quotes bor brackets
+// Number - Integers as well as floating-point numbers
+// Boolean - Logical entity/ true or false
+// null - Intentional absence of any object value
+// undefined - A variable that has not yet been defined/assigned
+// Symbol - Built in object whose constructor returns a unique Symbol
+// BigInt - Numbers that are greater than the "Number" type can handle
