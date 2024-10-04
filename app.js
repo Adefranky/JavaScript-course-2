@@ -805,3 +805,20 @@ console.log(person3);
 
 // Reference types: stored in the heap and accessed by reference 
 // arrays|functions|Objects
+
+
+// Type Conversion /coercion
+// is the process of convrting data type to another type
+// eg string to number 
+// let amount = '100';
+// console.log(amount);
+// amount = parseInt(amount);
+// amount= +amount;
+// amount= Number(amount);
+
+// number to String
+// amount= amount.toString();
+// amount= String(amount);
+
+// change string to decimal
+// amount = parseFloat(amount);
