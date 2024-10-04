@@ -822,3 +822,50 @@ console.log(person3);
 
 // change string to decimal
 // amount = parseFloat(amount);
+
+// concatnation
+// let x=5
+// x = "hello" + '' + "world";
+// console.log(x);
+
+// Exponent
+// x = 2 **3; => means 2*2*2
+// console.log(x);
+
+// Increment
+// x= x+1
+// x++;
+
+// Decrement 
+// x= x-1;
+// x--
+
+// Assignment operators
+// x = 10;
+// x +=5;
+// console.log(x);
+
+// x = 2 == '2';
+// x=2 ==="2";
+// x=2!= '2';
+// x =2 !== '2';
+
+// Type Coercion
+
+// let x;
+// x =5 + '5';
+
+// x = 5 + Number('5');
+
+// x = 5 + '5';
+
+// x = 5 + null;
+
+// x = Number(null);
+// console.log(x, typeof x);
+
+// true = 1;
+// false = 0;
+// null = 0;
+
+// undefined = NaN = > any number plus undefined = NaN
